@@ -1,0 +1,239 @@
+.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùú.
+       .         ø            .   An Official             ùù
+                     ÜÜ                     :
+     ,  ù          ÜßÜß   ú    ÜßßÜ      .      i     '
+                  ŞÛ Û    ù    ß²Üß         |                ì
+  é         "D    Û  Û    Ş     ùú     ..      .   .ÜÜÜÜÜÜ
+          r       Û  Û  úùÛù.úùÜßßÜ   ÜßßßßßÛ ÜßÜ..Û      ßÜ      ú
+      `          ŞÛ  Û°ÜÛÛßÛÜßß°  ŞÛ Û°   İ  Û  ÛÛÛ  ÜÛÛÜ   Û     ù
+         ù      ÜÛß  ßÛÛßß İÛÛİ   ŞÛİÛ   ÛÛ    ÛÛŞ   ÛÛÛÛ±Û Û  .  ³  .
+         |    Ûß         ÛÛ²ŞÛÛ   ŞÛİÛ  Û° Û  Û²ŞÛÛ    İŞÛÜÛÛ   \ º /
+      .      Ûß ÜßÛÜ  ÜÛÛÛÛÛŞÛÛ   ŞÛİÛ  Û  Û  Ûİ±ÛÛİ   Ü   Û úùÄÍğéğÍÄùú
+            ÛÜÛßÛÛÛÛ  Û±²ÛÛÛŞ±Û   ŞÛİÛ  °ÛÛ   °ÛŞÛ±ÛßÛÛÛÛÜ  Û   / º \
+   .ù        Û   ŞÛŞ  Û±ÛßÜÛŞ²Û    ÛİÛİ   İ   ÛÛİŞ² Ş²ÛÛ²ß  Û  ù  ³   ú
+             İ    ßÛÛ  ß  ÛİÛÛß°    ßÜÛ²Ü    Ü  ÜÛÛÛ  ßß   Û  ÜßßÜ ÄÄÄÄÄÄÄÄÄÄ
+             ù     ßÛÛ   ÜÛÛßŞÛÛÛÛÜÜÜÛÛßÛÛÛÛÛÛÛßß ßÛÜ    Üß   Û opyright 1997
+             ú     İ ßßÛßß           Ûİ            ßßßßÛß     ßÜÜß ÄÄÄÄÄÄÄÄÄÄ
+   ú         .     ù   İ             Û                ŞÛ  ù
+       ?        .  ú          o      Ş            .    İ    ¡   ú
+                                .          ù               ù
+     ø            ú                Phenomenon             ú  úù
+ .úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùú.
+          Pure Will, unassuaged of purpose, delivered from lust of result
+                             is everyway perfect.
+                  (A. Crowley... Magick in Theory and Practice)
+ .úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùú..
+
+  All you wanted to know about VAULT : This is just techinfo for the design
+  stages.
+
+ úúúúúúúúúúúúúúúúúúúúúúúúúúúúúú
+ Mage
+ úúúúúúúúúúúúúúúúúúúúúúúúúúúúúú
+
+ New Spell
+
+ New School
+
+ New Item
+
+ Update
+
+ Remove
+
+ úúúúúúúúúúúúúúúúúúúúúúúúúúúúúú
+ Cleric
+ úúúúúúúúúúúúúúúúúúúúúúúúúúúúúú
+
+ Deity
+
+ Profile
+
+ New Spell
+
+ Update
+
+ Remove
+
+ úúúúúúúúúúúúúúúúúúúúúúúúúúúúúú
+ Utilities
+ úúúúúúúúúúúúúúúúúúúúúúúúúúúúúú
+
+ PC             - PC Generator
+                  Name / Class / Race / Sex / Alignment / AC / THAC0 /
+                  damage and basic Description - 255 Characters Max.
+
+ NPC            - NPC Generator
+                  Name / Class / Race / Sex / Alignment / AC / THAC0 /
+                  Damage and Basic Description - 255 Characters Max.
+
+ Monster        - Monster Generator
+                  Name / AC / THAC0 / HitDice / Damage / Movement /
+                  XP (Linear or Exponential to HitDice, Boolean)
+                  Alignment / APR / Special Attacks & Defense
+
+ Campaign       - Place Gen
+                - Place Name / World Name / Terrain Type
+                  All user inputs
+                  General Descriptions
+                  Monsters (Pulled from MON database)
+
+ Encounter      - Encounter with NPC, Monster or Place
+                - Includes dialog / XP and possible treasure
+                  úúúúúúúúúúúúúúúúúúúúúúúúúúúúúúúúúúúúúúúúúú
+                - Encounter type :  (NPC,MONSTER,PLACE)
+                  Depending on which has been selected, grab from
+                  the NPC,MON,PLA database.  Scroll thru depending on
+                  (EncType).
+                - If NPC
+                  Dialog
+                - If MONSTER
+                  Generate Stats about the monster
+                  as well as...
+                - If NPC or MONSTER
+                  Treasure type (A..I)
+                  XP (Set by user)
+
+
+ .úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùú..
+                             LUVCHUNK.DAT File format
+ .úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùú..
+  
+  * Note : No compression, just raw data...
+  
+  Data Type              File Offset
+  
+  Palette                  1 Ä 768
+
+  Main Screen            769 Ä 64768
+  
+  Status Screen        64769 Ä 128769
+
+  View Screen         128769 - 192771
+
+  General Creation    192771 - 256772
+
+  Utils Screen
+
+  Chargen EquipScreen
+  
+  VGA Font
+  
+  TEXT Fonts
+ 
+ .úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùú..
+                                SFX.DAT File Format
+ .úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùú..
+  
+  Sample Name      Offset       Size
+
+  IMPACT2.WAV      1            (15052 Bytes)
+
+  BUTTON2.WAV      15053        (8940 Bytes)
+ 
+ .úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùú..
+                               AD&D.DAT File Format
+ .úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùú..
+ 
+  Data type               Byte IDs        File Offset
+
+  Fighter                   01d               01d
+
+  MaxLevel                  20d               02d
+
+  XP Levs              2,4,8,16,32,64,        03d 
+                       125,250,500,750,
+                       1000,1250,1500,
+                       1750,2000,2250,
+                       2750,3000
+
+## Dice type
+  Hit Dice type             10d         (XPLev + MaxLevel +1)
+
+## Maximum normal dice level
+  Hit Dice Max              09d             (HDT + 1)
+
+## Hit dice factor after maxlevel (ie 9d10 + (Factor * (CharLevel-DiceMax)))
+  Hit dice factor           03d             (HDM + 1)
+
+## Attacks Per round Low : Level range 1 :   1 attack/round  
+  APR Low                   1,1            (HDF + 1)
+
+## Attacks Per round Med : Level range 2 : 3/2 attacks/round  
+  APR Med                   2,3/2          (APRL + 1)    
+
+## Attacks Per round Hi  : Level range 3 :   2 attacks/round  
+  APR Hi                    3,2            (APRM + 4)
+
+ .úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùú..
+                                Directory Structure
+ .úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùú..
+ úùÄÂÄùú
+    ÃÄÍ[ FILE_ID  DIZ ] - BBS File ident.
+    ÃÄÍ[ MIDAS    CFG ] - Midas config file
+    ÃÄÍ[ SETUP    EXE ] - Sound Setup
+    ÃÄÍ[ CRD07087 EXE ] - BBS Advert
+    ÃÄÍ[ VAULT    EXE ] - Main Executable
+    ÃÄÍ[ VAULT    DOC ] - The Doc file
+    ³
+    ÃÄÄÄÄÄ¿
+    ³     À DATA ¿
+    ³            ÃÄÍ[ LUVCHUNK DAT ] - Program Data (Screens)
+    ³            ÃÄÍ[ SFX      DAT ] - Sound Effects Data
+    ³            ÀÄÍ[ AD&D     DAT ] - AD&D Rule Data
+    ³            
+    ÃÄÄÄÄÄ¿
+    ³     À MUZIK ¿
+    ³             ÃÄÍ[ CAPTURED S3M ] - Space Hulk : Captured Sun
+    ³             ÃÄÍ[ CRYSTAL  S3M ] - Crystal Dragon
+    ³             ÃÄÍ[ RAMAGARD S3M ] - Rama Gardens
+    ³             ÀÄÍ[ WAR-REM  S3M ] - War in Middle-Earth Remix
+    ³
+    ÀÄÄÄÄÄ¿
+          À DOCS  ¿
+                  ÃÄÍ[ 30_TYPES ASC ] -  30 Types of AD&D Character. (Funny!)
+                  ÃÄÍ[ CHRSHT   ASC ] -  Complex Character sheet
+                  ÃÄÍ[ EARTHDRA ASC ] -  Earth Dragon - New Monster
+                  ÃÄÍ[ EQUIPMEN ASC ] -  Equipment List sheet
+                  ÃÄÍ[ GAZE     ASC ] -  Level 7 Illusion/Phantasm spell
+                  ÃÄÍ[ GIANTSTR ASC ] -  Giant Strength Tables
+                  ÃÄÍ[ OLLISTAF ASC ] -  Staff of OliPhompe - Artifact
+                  ÃÄÍ[ SPELLS_M ASC ] -  Mage spell sheet
+                  ÃÄÍ[ STRETCH  ASC ] -  Level 4 Alteration Magic spell
+                  ÃÄÍ[ TRESTYPE ASC ] -  Treasure type defines
+                  ÃÄÍ[ TROPIMAM ASC ] -  Tropical Monsters (Dragon Mag.)
+                  ÃÄÍ[ UTUCHEKU ASC ] -  Utuchekulu Dwarves (Dragon Mag.)
+                  ÃÄÍ[ WEPWIELD ASC ] -  Level 9 Conjuration/Summoning
+                  ÀÄÍ[ SPELBOOK TXT ] -  Wizards Spellsheet
+                 
+.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùú.
+               Like our work?  Here's where we can be reached...
+ .úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùÄÄÍÍÍÄÄùú.úùÄÄ--ÄÍ--Äùú.úùÄÄÍÍÍÄùú.
+                             ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                                Head Office
+                             ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                              Managing Director
+                              Ian Jermyn  (E)
+                              100 Lapoinya Crs
+                              Warana Qld 4575
+                              Ph (07) 54935016
+
+                             ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                             General Inquiries
+                             ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  Sunshine Coast connection                    Brisbane connection 
+          Arts Dept.                              Marketing & Research
+        Jarrod Westmore                             Michael Pearson
+           5 Mark St                                   5 Park St
+       Buderim, Qld 4556                            Ipswich, Qld 4305
+        Ph (07) 54440419                            Ph (07) 32812955
+
+                     Jim ù jp1.tucker@sutdent.qut.edu.au
+                          Mia ù mhacker@scuc.edu.au
+
+                * New office opening in Melbourne, July '97! *
+
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                              TIAS (c) 1997
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+

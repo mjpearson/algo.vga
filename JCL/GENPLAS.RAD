@@ -1,0 +1,83 @@
+/*
+
+	JCL-Plasma v1.3a (C) 1994 JCL-software
+
+    This file contains the routines necessary to create the PLASMA.DAT
+    file required by JCLPLASM.ASM.  These routines are provided separately
+    to ease modification.  Feel free to tweak the values here (thats all
+    I did to get a good effect) - send me any good variations you might
+    create...  [compiled with TurboC, BTW]
+
+    WARNING - if you don't have a coprocessor this takes AGES....
+
+    See README.TXT for more info
+
+    Jezza (jcl1008@cus.cam.ac.uk)
+
+*/
+
+
+#include <stdio.h>
+#include <math.h>
+
+void	main()
+{
+	float	x,y,count,i;
+	int	lead,offset;
+	FILE	*fp;
+	unsigned char value;
+
+	printf("\nJCL-plasma Generator 1.1L (C) JCL-Software 1994\n\nHang in there ...!\n");
+
+	if (!(fp=fopen("PLASMA.DAT","wb")))
+	{
+		printf("\7Cant open output file PLASMA.DAT\n");
+		exit(255);
+	}
+
+	/* First generate the plasma map.  This is effectively just an
+	   arbitrary function of x and y which gives a smooth but
+	   non-uniform surface */
+
+
+	for (y=0;y<300;y++)
+	for (x=0;x<512;x++)
+	{
+        value=64+10*( sin(x/30) + cos(y/46) +
+                  cos(x/27) + sin(y/60) +
+                  sin((x+y)/63) +
+                  cos(hypot(256-x,150-y)/12)
+			      );
+		fputc(value,fp);
+	}
+
+	/* Then arbitrary movement for two pointers */
+
+	for (count=0;count<10000;count++)
+	{
+        lead=           96+92*cos(count/20)
+             +512*(int)(48+47*sin(count/16));
+        offset=         96+92*sin(count/41)
+             +512*(int)(48+47*cos(count/14))
+		     -lead;
+		fwrite(&lead,2,1,fp);
+		fwrite(&offset,2,1,fp);
+	}
+
+	/* And a smooth transition colour lookup table */
+
+	for (i=-256; i<256*39; i++)
+		if (i<0)
+		{
+			fputc(0,fp);
+			fputc(0,fp);
+			fputc(0,fp);
+		}
+		else
+		{
+			fputc((sin(i/20)*sin(i/15)*31+31),fp);
+			fputc((sin(i/35)*sin(i/22)*31+31),fp);
+			fputc((sin(i/13)*sin(i/30)*31+31),fp);
+		}
+	fclose(fp);
+}

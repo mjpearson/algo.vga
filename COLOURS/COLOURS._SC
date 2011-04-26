@@ -1,0 +1,63 @@
+.MODEL small
+.CODE
+org 100h
+begin:
+    jmp     around
+Column      db  01h                 
+attrib      db 7                    
+Onscreen    db 05h,'-',0dh,'=',0fh,'Gre',08,'et',05h,'in',0dh,'g',0fh,'s M',07h,'or',08h,'tal',05h,'=',0dh,'-',0
+Around:
+    call    ClearFast  
+    lea     si,[Onscreen]
+    mov     cx,1       
+IncPos:
+    lods    byte ptr ds:[si]
+    or      al,al
+    je      Exit2Dos
+    cmp     al,1Ah
+    jg      Roundyahop
+    mov     attrib,al 
+    jmp     IncPos    
+Roundyahop:
+    mov     dl,Column 
+    xor     dh,dh     
+    xor     bh,bh     
+    call    SetXY
+    mov     ah,09h    
+    mov     bl,attrib 
+    int     10h
+    inc     Column    
+    jmp     IncPos    
+Exit2Dos:
+    xor     dl,dl
+    mov     dh,1
+    call    SetXY
+    mov     ah,04ch
+    mov     al,0h
+    int     21h
+SetXY   Proc
+    mov     ah,02h
+    int     10h
+    ret
+Endp    SetXY
+ClearFast PROC
+    mov     cx,24          
+    xor     dx,dx          
+    xor     bx,bx          
+    xor     al,al          
+rpt:
+    push    cx             
+    mov     ah,02h         
+    int     10h
+    inc     dh             
+    mov     ah,09h         
+    mov     cx,80          
+    int     10h
+    pop     cx             
+    loop    rpt            
+    xor     dx,dx          
+    mov     ah,02h         
+    int     10h
+    ret
+EndP ClearFast
+end begin

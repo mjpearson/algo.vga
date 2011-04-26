@@ -1,0 +1,4 @@
+       -[ PCXPAL 1.0 ]-
+useless little program to extract
+palette data from 256c PCX-files.
+ --  includes pascal sources --
